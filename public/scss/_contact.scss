@@ -1,0 +1,537 @@
+/* Helpline Area css
+============================================================================================ */
+.helpline_area{
+    background: url(../img/help-line-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding: 100px 0px;
+    &:before{
+        content: "";
+        background: rgba(48, 46, 60, .9);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+    .helpline_inner{
+        max-width: 800px;
+        margin: auto;
+        .media{
+            .media-left{
+                padding-right: 50px;
+            }
+            .media-body{
+                h6{
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: $mon;
+                    opacity: .3;
+                    letter-spacing: .32px;
+                }
+                h4{
+                    font-size: 28px;
+                    color: #f4f4f4;
+                    font-family: $mon;
+                    font-weight: bold;
+                    letter-spacing: .84px;
+                    text-transform: uppercase;
+                    padding: 10px 0px 15px 0px;
+                }
+                p{
+                    font-size: 18px;
+                    font-family: $lato;
+                    line-height: 24px;
+                    color: #f4f4f4;
+                    letter-spacing: .36px;
+                    max-width: 580px;
+                    padding-bottom: 40px;
+                }
+                .contact_d{
+                    vertical-align: middle;
+                    a{
+                        color: $baseColor;
+                        font-size: 30px;
+                        font-family: $lato;
+                        font-weight: bold;
+                        letter-spacing: .6px;
+                        position: relative;
+                        margin-right: 65px;
+                        &:before{
+                            content: "";
+                            width: 1px;
+                            height: 44px;
+                            background: #73717a;
+                            position: absolute;
+                            right: -32px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        & + a{
+                            color: #fff;
+                            font-size: 23px;
+                            font-weight: normal;
+                            vertical-align: top;
+                            margin-right: 0px;
+                            &:before{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+/* End Helpline Area css
+============================================================================================ */
+
+/* Contact Area css
+============================================================================================ */
+.contact_area{
+    background: $baseColor;
+    overflow: hidden;
+    clear: both;
+    .contact_left_side{
+        width: calc(50% + 115px);
+        float: left;
+        overflow: hidden;
+        .contact_inner{
+            max-width: 700px;
+            padding-right: 130px;
+            float: right;
+            padding-top: 90px;
+        }
+    }
+    .contact_right_side{
+        width: calc(50% - 115px);
+        float: right;
+        overflow: hidden;
+        .contact_r_image{
+            position: relative;
+            &:before{
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 110px 110px 110px 0;
+                border-color: transparent rgba(43, 87, 132, .9) transparent transparent;
+                position: absolute;
+                right: 0px;
+                top: calc(50% + 45px);
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+            &:after{
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 110px 110px 110px 0;
+                border-color: transparent rgba(22, 140, 76, .9) transparent transparent;
+                position: absolute;
+                right: 0px;
+                top: calc(50% - 45px);
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+.request_contact{
+    .form-group{
+        margin-bottom: 13px;
+        &:last-child{
+            margin-bottom: 0px;
+            margin-top: 17px;
+        }
+        input{
+            border: none;
+            background: #179850;
+            border-radius: 0px;
+            height: 42px;
+            padding: 0px 20px;
+            outline: none;
+            font-family: $lato;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: .30px;
+            @include transition;
+            @include placeholder{
+                font-family: $lato;
+                color: #fff;
+                font-size: 15px;
+                letter-spacing: .30px;
+            }
+            &:focus{
+                box-shadow: 0px 0px 20px 0px rgba(23, 152, 80, 0.5);
+            }    
+        } 
+        label{
+            margin-bottom: 0px;
+            font-family: $lato;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: .30px;
+            font-weight: normal;
+        }
+        textarea{
+            border: none;
+            background: #179850;
+            border-radius: 0px;
+            height: 135px;
+            padding: 15px 20px;
+            outline: none;
+            font-family: $lato;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: .30px;
+            @include transition;
+            resize: none;
+            @include placeholder{
+                font-family: $lato;
+                color: #fff;
+                font-size: 15px;
+                letter-spacing: .30px;
+            }
+            &:focus{
+                box-shadow: 0px 0px 20px 0px rgba(23, 152, 80, 0.5);
+            }    
+        }
+    }
+}
+/* End Contact Area css
+============================================================================================ */
+
+/* Get In Consultation Area css
+============================================================================================ */
+.get_consult_area{
+    background: $baseColor;
+    padding: 29px 0px;
+    .pull-left{
+        h3{
+            font-size: 32px;
+            color: #fff;
+            font-weight: 600;
+            font-family: $mon;
+            letter-spacing: .64px;
+            padding-top: 6px;
+            padding-left: 60px;
+        }
+    }
+    .pull-right{
+        position: relative;
+        left: -60px;
+        .submit_btn{
+            width: 236px;
+        }
+    }
+}
+/* End Get In Consultation Area css
+============================================================================================ */
+
+/* Contact Us Area css
+============================================================================================ */
+.contact_us_area{
+    padding: 100px 0px;
+    .contact_us_inner{
+        border-bottom: 1px solid #e4e4e4;
+        padding-bottom: 50px;
+    }
+}
+.contact_us_form{
+    .form-group{
+        margin-bottom: 20px;
+        input{
+            border: 1px solid #dedede;
+            border-radius: 0px;
+            background: #f8f8f8;
+            height: 55px;
+            box-shadow: none;
+            padding: 0px 24px;
+            outline: none;
+            font-size: 17px;
+            color: #797979;
+            font-family: $lato;
+            letter-spacing: .51px;
+            @include placeholder{
+                font-size: 17px;
+                color: #797979;
+                font-family: $lato;
+                letter-spacing: .51px;
+            }
+            &:focus{
+                border-color: $baseColor;
+            }
+        }
+        label{
+            font-size: 14px;
+            color: #797979;
+            font-family: $lato;
+            letter-spacing: .51px;
+            font-weight: normal;
+            margin-bottom: 0px;
+        }
+        textarea{
+            border: 1px solid #dedede;
+            border-radius: 0px;
+            background: #f8f8f8;
+            height: 203px;
+            box-shadow: none;
+            padding: 20px 24px;
+            outline: none;
+            font-size: 17px;
+            color: #797979;
+            font-family: $lato;
+            letter-spacing: .51px;
+            resize: none;
+            @include placeholder{
+                font-size: 17px;
+                color: #797979;
+                font-family: $lato;
+                letter-spacing: .51px;
+            }
+            &:focus{
+                border-color: $baseColor;
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.contact_us_details{
+    padding-top: 50px;
+    .row{
+        .col-md-4{
+            &:nth-child(2){
+                .c_details_item{
+                    .media{
+                        .media-left{
+                            i{
+                                font-size: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.c_details_item{
+    background: #3b3b3d;
+    border: 1px solid #e5e5e5;
+    padding: 28px 30px;
+    .media{
+        .media-left{
+            padding-right: 30px;
+            vertical-align: middle;
+            i{
+                height: 50px;
+                width: 50px;
+                border: 1px solid $baseColor;
+                border-radius: 50%;
+                color: $baseColor;
+                text-align: center;
+                line-height: 50px;
+                font-size: 30px;
+                @include transition;
+            }
+        }
+        .media-body{
+            p{
+                max-width: 185px;
+                font-size: 17px;
+                font-family: $lato;
+                color: #a0a0a0;
+                letter-spacing: .34px;
+                line-height: 22px;
+            }
+            a{
+                display: block;
+                font-size: 17px;
+                font-family: $lato;
+                color: #a0a0a0;
+                letter-spacing: .34px;
+            }
+        }
+        &:hover{
+            .media-left{
+                i{
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.map_area{
+    .mapBox{
+        height: 440px;
+    }
+}
+/* End Contact Us Area css
+============================================================================================ */
+
+/* Request Call Back Area css
+============================================================================================ */
+.request_call_back_area{
+    background: #eeeeee;
+    padding: 100px 0px;
+}
+.call_back_contact{
+    margin-bottom: -30px;
+    clear: both;
+    .form-group{
+        margin-bottom: 30px;
+        input{
+            border: 1px solid #dedede;
+            border-radius: 0px;
+            height: 50px;
+            padding: 0px 20px;
+            box-shadow: none;
+            outline: none;
+            font-size: 15px;
+            color: #999999;
+            font-family: $open;
+            letter-spacing: .45px;
+            @include placeholder{
+                font-size: 15px;
+                color: #999999;
+                font-family: $open;
+                letter-spacing: .45px;
+            }
+        }
+        label{
+            font-size: 15px;
+            color: #999999;
+            font-family: $open;
+            letter-spacing: .45px;
+            font-weight: normal;
+        }
+        .bootstrap-select{
+            width: 100% !important;
+            .btn-default{
+                padding: 0px 20px;
+                border-color: #dedede;
+                border-radius: 0px;
+                height: 50px;
+                outline: none !important;
+                box-shadow: none !important;
+                @include transition;
+                &:focus{
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                .filter-option{
+                    font-size: 15px;
+                    color: #999999;
+                    font-family: $open;
+                    letter-spacing: .45px;
+                    @include transition;
+                }
+                .bs-caret{
+                    .caret{
+                        right: 20px;
+                        color: #999999;
+                        border-top: 5px dashed;
+                        border-top: 4px solid \9;
+                        border-right: 5px solid transparent;
+                        border-left: 5px solid transparent;
+                        @include transition;
+                    }
+                }
+                &:hover, &:focus{
+                    background: $baseColor;
+                    .filter-option{
+                        color: #fff;
+                    }
+                    .bs-caret{
+                        .caret{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .dropdown-menu{
+                margin-top: 5px;
+                padding: 0px;
+                border-radius: 0px;
+                .dropdown-menu.inner{
+                    margin-top: 0px;
+                    li{
+                        a{
+                            line-height: 45px;
+                            color: #494848;
+                            font-family: $lato;
+                            font-weight: bold;
+                            font-size: 16px;
+                            padding: 0px 30px;
+                            text-transform: capitalize;
+                            @include transition;
+                            display: block;
+                        }
+                        &:hover, &:focus{
+                            a{
+                                background: $baseColor;
+                                color: #fff;
+                            }
+                        }
+                        &.selected{
+                            a{
+                                background: $baseColor;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &.open{
+                .btn-default{
+                    background-color: $baseColor;
+                    .filter-option{
+                        color: #fff;
+                    }
+                    .bs-caret{
+                        .caret{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-message{
+    .modal-dialog{
+        margin-top: 130px;
+        .modal-content{
+            .modal-header{
+                text-align: center;
+                .modal-title{
+                    padding-top: 80px;
+                    color: $baseColor;
+                    font-size: 45px;
+                    font-family: $mon;
+                    letter-spacing: .80px;
+                }
+                .modal-subtitle{
+                    padding-bottom: 90px;
+                    font-size: 16px;
+                    color: $pfont;
+                    font-family: $mon;
+                    letter-spacing: .45px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+/* End Request Call Back Area css
+============================================================================================ */

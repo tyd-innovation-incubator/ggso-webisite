@@ -1,0 +1,281 @@
+/* Our Workers Area css
+============================================================================================ */
+.our_workers_area{
+    background: #f1f1f1;
+    padding: 100px 0px;
+    .section_title{
+        
+    }
+}
+.d_team_inner{
+	margin-bottom: -70px;
+	overflow: hidden;
+	.workers_item{
+		margin-bottom: 70px;
+	}
+}
+.join_us{
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	background: $baseColor;
+	text-align: center;
+	color: #fff;
+	margin: auto;
+	h5{
+		color: #fff;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: $mon;
+		font-weight: bold;
+		line-height: 180px;
+	}
+}
+.workers_item{
+    text-align: center;
+    .workers_img{
+        position: relative;
+        z-index: 2;
+        height: 182px;
+        width: 182px;
+        border-radius: 50%;
+        margin: auto;
+        &:before{
+            content: "";
+            background: rgba(24, 186, 96, .90);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 182px;
+            width: 182px;
+            border-radius: 50%;
+            z-index: 1;
+            opacity: 0;
+            @include transition;
+        }
+        ul{
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            width: 100%;
+            z-index: 2;
+            opacity: 0;
+            @include transition;
+            li{
+                display: inline-block;
+                margin-right: 16px;
+                a{
+                    color: #fff; 
+                    font-size: 20px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    h4{
+        font-size: 14px;
+        color: $dip;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 25px 0px 8px 0px;
+        @include transition;
+    }
+    h6{
+        font-size: 15px;
+        font-family: $lato;
+        font-weight: bold;
+        letter-spacing: .45px;
+    }
+    &:hover{
+        h4{
+            color: $baseColor;
+        }
+        .workers_img{
+            &:before{
+               opacity: 1;
+            }  
+            ul{
+                opacity: 1;
+            }
+        }
+    }    
+}
+/* End Our Workers Area css
+============================================================================================ */
+
+/* What Customers Area css
+============================================================================================ */
+.what_customer_area{
+    background: url(../img/what-c-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding: 100px 0px;
+    &:before{
+        content: "";
+        background: rgba(41, 40, 46, .92);
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        top: 0px;
+        height: 100%;
+        z-index: -1;
+    }
+    .what_title{
+        text-align: center;
+        padding-bottom: 45px;
+        h2{
+            color: #fff;
+            font-size: 28px;
+            letter-spacing: .84px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: $mon;
+        }
+    }    
+}
+.what_customer_inner{
+    margin-bottom: -50px;
+    overflow: hidden;
+    .what_customer_item{
+        text-align: center;
+        .what_customer_img{
+            position: relative;
+            z-index: 2;
+            height: 182px;
+            width: 182px;
+            border-radius: 50%;
+            margin: auto;
+            &:before{
+                content: "";
+                background: rgba(24, 186, 96, .90);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 182px;
+                width: 182px;
+                border-radius: 50%;
+                z-index: 1;
+                opacity: 0;
+                @include transition;
+            }
+            ul{
+                position: absolute;
+                left: 0px;
+                top: 52%;
+                transform: translateY(-50%);
+                text-align: center;
+                width: 100%;
+                z-index: 2;
+                opacity: 0;
+                @include transition;
+                li{
+                    display: inline-block;
+                    margin-right: 16px;
+                    a{
+                        color: #fff; 
+                        font-size: 20px;
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        img{
+            
+        }
+        p{
+            font-size: 17px;
+            color: #919191;
+            line-height: 28px;
+            letter-spacing: .51px;
+            padding-top: 22px;
+            padding-bottom: 25px;
+        }
+        h4{
+            font-size: 18px;
+            color: #fff;
+            font-family: $mon;
+            letter-spacing: .54px;
+            padding-bottom: 15px;
+        }
+        .quote{
+            color: $baseColor;
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial;
+            line-height: 90px;
+        }
+        &:hover{
+            .what_customer_img{
+                &:before{
+                   opacity: 1;
+                }  
+                ul{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/* End What Customers Area css
+============================================================================================ */
+
+/* Testimonial Area css
+============================================================================================ */
+.testimonial_page_area{
+	
+}
+.testi_page_item{
+	padding-top: 130px;
+	padding-bottom: 80px;
+	.media{
+		.media-left{
+			padding-right: 70px;
+			h5{
+				text-align: center;
+				font-size: 100px;
+				color: $baseColor;
+				font-family: 'Arial';
+				font-weight: bold;
+				padding-top: 50px;
+				line-height: 50px
+			}
+		}
+		.media-body{
+			p{
+				font-size: 22px;
+				line-height: 35px;
+				color: #797979;
+				font-family: $lato;
+				font-style: italic;
+				padding-bottom: 25px;
+			}
+			h4{
+				font-size: 18px;
+				font-family: $mon;
+				font-weight: bold;
+				color: $baseColor;
+				padding-bottom: 10px;
+			}
+			h5{
+				color: $dip;
+				font-family: $lato;
+				font-style: italic;
+				color: #242424;
+			}
+		}
+		
+	}
+	&:nth-child(even){
+		background: #f1f1f1;
+	}
+}
+/* End Testimonial Area css
+============================================================================================ */

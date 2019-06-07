@@ -1,0 +1,607 @@
+/* Latest News area css
+============================================================================================ */
+.latest_news_area{
+    padding: 100px 0px;
+}
+.latest_news_inner{
+    
+}
+.latest_n_item{
+    .l_n_image{
+        position: relative;
+        overflow: hidden;
+        z-index: 3;
+        &:before{
+            content: "";
+            background: rgba(0, 0, 0, .40);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            opacity: 0;
+            @include transition;
+        }    
+        img{
+            max-width: 100%;
+            @include transition;
+        }
+        .date{
+            z-index: 3;
+        }
+    }
+    h4{
+        font-size: 18px;
+        line-height: 26px;
+        color: $dip;
+        font-family: $lato;
+        font-weight: bold;
+        letter-spacing: .36px;
+        padding: 35px 0px 20px 0px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 26px;
+        font-family: $open;
+        letter-spacing: .30px;
+        padding-bottom: 20px;
+    }
+    &:hover{
+        img{
+            transform: scale(1.05);
+        }
+        &:before{
+            opacity: 1;
+        }
+    }
+}
+.date{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    height: 63px;
+    width: 63px;
+    background: $baseColor;
+    text-align: center;
+    color: #fff;
+    h5{
+        font-size: 22px;
+        font-family: $mon;
+        font-weight: bold;
+        letter-spacing: .66px;
+        padding-top: 11px;
+        line-height: 22px;
+        span{
+            font-family: $lato;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}
+/* End Latest News area css
+============================================================================================ */
+
+/* Blog Main area css
+============================================================================================ */
+.main_blog_area{
+    padding: 100px 0px;
+    .main_blog_inner{
+        .main_blog_image{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+.main_blog_items{
+    padding-right: 30px;
+    .main_blog_item{
+        margin-bottom: 80px;
+        .main_blog_image{
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            &:before{
+                content: "";
+                background: rgba(0, 0, 0, .40);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                opacity: 0;
+                @include transition;
+            }    
+            img{
+                max-width: 100%;
+                @include transition;
+            }
+            .date{
+                height: 76px;
+                width: 76px;
+                z-index: 3;
+                h5{
+                    font-size: 30px;
+                    padding-top: 16px;
+                }
+            }
+            &:hover{
+                img{
+                    transform: scale(1.05);
+                }
+                &:before{
+                    opacity: 1;
+                }
+            }
+        }
+        .main_blog_text{
+            h2{
+                font-size: 20px;
+                font-family: $mon;
+                font-weight: bold;
+                color: $dip;
+                text-transform: uppercase;
+                letter-spacing: .40px;
+                padding-top: 50px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #e4e4e4;
+            }
+            .blog_author_area{
+                padding-top: 10px;
+                a{
+                    font-size: 17px;
+                    font-family: $lato;
+                    color: #b8b8b8;
+                    margin-right: 25px;
+                    font-weight: 600;
+                    i{
+                        color: $baseColor;
+                        padding-right: 10px;
+                    }
+                    span{
+                        &:hover{
+                            color: $baseColor;
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+            p{
+                line-height: 28px;
+                color: #797979;
+                font-size: 17px;
+                font-family: $lato;
+                letter-spacing: .51px;
+                padding: 30px 0px 25px 0px;
+            }
+            .b_readmore{
+                &:hover{
+                    &:before{
+                        transform: scale(1);
+                    }
+                    color: #fff;
+                    border-color: $baseColor;
+                }
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.blog_pagination{
+    margin-top: 50px;
+    .pagination{
+        margin: 0px;
+        li{
+            margin-right: 8px;
+            display: inline-block;
+            a{
+                border: 2px solid #d4d4d4;
+                padding: 8px 15.5px;
+                border-radius: 0px !important;
+                font-size: 18px;
+                color: $dip;
+                font-family: $open;
+                @include transition;
+                &:focus{
+                    background: $baseColor;
+                    color: #fff;
+                    border-color: $baseColor;
+                }
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:hover, &.active{
+                a{
+                    background: $baseColor;
+                    border-color: $baseColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/* End Blog Main area css
+============================================================================================ */
+
+/* Sidebar area css
+============================================================================================ */
+.sidebar_area{
+    
+}
+.r_widget{
+    margin-bottom: 50px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+.r_widget_title{
+    padding-bottom: 25px;
+    h3{
+        font-size: 20px;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $dip;
+    }
+}
+.search_widget{
+    .input-group{
+        input{
+            box-shadow: none;
+            border-color: #d3d3d3;
+            border-radius: 0px;
+            height: 52px;
+            font-size: 14px;
+            color: #909090;
+            padding: 0px 15px;
+            font-family: $lato;
+            @include placeholder{
+                font-size: 14px;
+                color: #909090;
+                font-family: $lato;
+            }
+        }
+        .input-group-btn{
+            .btn-default{
+                border-radius: 0px;
+                width: 48px;
+                height: 52px;
+                border-color: #d3d3d3;
+                padding: 0px;
+                background: $baseColor;
+                color: #fff;
+            }
+        }
+    }
+}
+.categories_widget{
+    ul{
+        margin-top: -5px;
+        li{
+            a{
+                font-size: 17px;
+                color: #797979;
+                font-family: $lato;
+                border-bottom: 1px solid #e6e6e6;
+                display: block;
+                line-height: 42px;
+                @include transition;
+                font-weight: bold;
+                i{
+                    float: right;
+                    line-height: 42px;
+                    @include transition;
+                }
+            }
+            &:last-child{
+                a{
+                    border-bottom: 0px;
+                }
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                    i{
+                        padding-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+.recent_widget{
+    .recent_inner{
+        .recent_item{
+            padding: 20px 0px;
+            border-bottom: 1px solid #e1e1e1;
+            h4{
+                font-size: 17px;
+                color: $dip;
+                font-family: $lato;
+                line-height: 22px;
+                letter-spacing: .34px;
+                @include transition;
+                font-weight: bold;
+                &:hover{
+                    color: $baseColor;
+                    text-decoration: underline;
+                }
+            }
+            h5{
+                font-size: 15px;
+                color: #9a9a9a;
+                font-family: $lato;
+                font-weight: bold;
+                padding-top: 15px;
+            }
+            &:first-child{
+                padding-top: 0px;
+            }
+            &:last-child{
+                border-bottom: 0px;
+            }
+        }
+    }
+}
+.recent_widget{
+    ul{
+        li{
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 10px;
+            a{
+                display: inline-block;
+                border: 1px solid #e4e4e4;
+                font-size: 15px;
+                line-height: 45px;
+                padding: 0px 16px;
+                color: #a6a6a6;
+                @include transition;
+            }
+            &:nth-last-child(-n+2){
+                margin-bottom: 0px;
+            }
+            &:nth-child(even){
+                margin-right: 0px;
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                    border-color: $baseColor;
+                    background: $baseColor;
+                    color: #fff;
+                }    
+            }
+        }
+    }
+}
+/* End Sidebar area css
+============================================================================================ */
+
+/* Single Blog area css
+============================================================================================ */
+.single_blog_details{
+    .main_blog_items{
+        .main_blog_item{
+            margin-bottom: 15px;
+        }
+    }
+}
+.two_column_sample{
+    h3{
+        font-size: 20px;
+        font-family: $mon;
+        font-weight: bold;
+        color: $dip;
+        letter-spacing: .6px;
+        text-transform: uppercase;
+        padding-bottom: 28px;
+    }
+    .two_column_item{
+        max-width: 370px;
+        display: inline-block;
+        margin-right: 27px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    p{
+        font-size: 15px;
+        line-height: 26px;
+        color: #8e8d8d;
+        font-family: $open;
+    }
+}
+.s_blog_quote{
+    background: #f7f7f7;
+    margin-top: 46px;
+    padding: 20px 40px 32px 30px;
+    p{
+        padding-left: 72px;
+        position: relative;
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 26px;
+        color: #8e8d8d;
+        font-family: $open;
+        i{
+            font-size: 55px;
+            color: $baseColor;
+            position: absolute;
+            left: 0px;
+            top: -15px;
+        }
+    }
+    a{
+        text-align: right;
+        display: block;
+        font-size: 16px;
+        color: #a175aa;
+        font-family: $open;
+        font-style: italic;
+        letter-spacing: .48px;
+    }
+}
+.s_main_text{
+    padding-top: 38px;
+    p{
+        font-size: 15px;
+        line-height: 26px;
+        color: #8e8d8d;
+        font-family: $open;
+        letter-spacing: .45px;
+        strong{
+            font-family: $open;
+            font-weight: bold;
+            font-style: italic;
+        }
+        a{
+            color: #a175aa;
+            text-decoration: underline;
+        }    
+    }
+}
+
+.s_comment_list{
+    margin-top: 50px;
+    h3{
+        font-size: 22px;
+        text-transform: uppercase;
+        font-family: $mon;
+        font-weight: bold;
+        letter-spacing: .66px;
+        color: $dip;
+        padding-bottom: 30px;
+    }
+    .s_comment_list_inner{
+        border: 1px solid #eeeeee;
+        .media{
+            padding-top: 25px;
+            padding-bottom: 28px;
+            padding-left: 25px;
+            padding-right: 75px;
+            margin-top: 0px;
+            border-bottom: 1px solid #eeeeee;
+            .media-left{
+                padding-right: 30px;
+            }
+            .media-body{
+                h4{
+                    font-size: 15px;
+                    font-family: $open;
+                    font-family: $open;
+                    color: $dip;
+                    letter-spacing: .45px;
+                    padding-bottom: 7px;
+                }
+                p{
+                    font-size: 15px;
+                    font-family: $open;
+                    letter-spacing: .45px;
+                    color: $pfont;
+                    line-height: 26px;
+                }
+                .date_rep{
+                    margin-top: 10px;
+                    a{
+                        font-size: 13px;
+                        font-family: $open;
+                        letter-spacing: .39px;
+                        color: #47bcca;
+                        margin-right: 20px;
+                        position: relative;
+                        &:before{
+                            content: "";
+                            background: #47bcca;
+                            height: 13px;
+                            width: 1px;
+                            position: absolute;
+                            right: -12px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        &:last-child{
+                            color: #a175aa;
+                            &:before{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .media{
+                    background: transparent;
+                    padding-left: 0px;
+                    padding-top: 40px;
+                    padding-right: 0px;
+                }
+            }
+            &:nth-child(even){
+                background: #fcfcfc;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}
+.s_comment_area{
+    margin-top: 60px;
+    h3{
+        font-size: 22px;
+        text-transform: uppercase;
+        font-family: $mon;
+        font-weight: bold;
+        letter-spacing: .66px;
+        color: $dip;
+        padding-bottom: 30px;
+    }
+    .s_comment_inner{
+        background: #f7f7f7;
+        border: 1px solid #eeeeee;
+        padding: 50px 35px;
+        .contact_us_form{
+            .form-group{
+                input{
+                    background: #fff;
+                    border-color: #eeeeee;
+                    font-size: 14px;
+                    color: #c4c4c4;
+                    font-family: $open;
+                    letter-spacing: .42px;
+                    @include placeholder{
+                        font-size: 14px;
+                        color: #c4c4c4;
+                        font-family: $open;
+                        letter-spacing: .42px;
+                    }
+                }
+                textarea{
+                    background: #fff;
+                    border-color: #eeeeee;
+                    font-size: 14px;
+                    color: #c4c4c4;
+                    font-family: $open;
+                    letter-spacing: .42px;
+                    @include placeholder{
+                        font-size: 14px;
+                        color: #c4c4c4;
+                        font-family: $open;
+                        letter-spacing: .42px;
+                    }
+                }
+                &:last-child{
+                    margin-top: 10px;
+                }
+            }    
+        }
+    }
+}
+/* End Single area css
+============================================================================================ */

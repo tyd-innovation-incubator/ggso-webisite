@@ -1,0 +1,57 @@
+/* Slider area css
+============================================================================================ */
+.main_slider_area{
+    position: relative;
+    .rev_slider{
+        ul{
+            li{
+                .slotholder{
+                    .tp-bgimg{
+                    }
+                    
+                }
+                .slider_text_box{
+                    .first_text{
+                        color: #fff;
+                        font-weight: 600;
+                        font-family: $mon;
+                    }
+                    .secand_text{
+                        color: #fff;
+                        font-family: $lato;
+                        letter-spacing: .54px;
+                    }
+                    .slider_button{
+                        .main_btn{
+                            margin-right: 15px;
+                            width: 165px;
+                            height: 48px;
+                            padding: 0px;
+                            line-height: 46px !important;
+                            text-align: center !important;
+                            display: inline-block;
+                        }
+                        .main_b_btn{
+                            padding: 0px 35px;
+                            width: 165px;
+                            height: 48px;
+                            padding: 0px;
+                            line-height: 46px !important;
+                            text-align: center !important;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+//        .tp-rightarrow, .tp-leftarrow{
+//            z-index: 22 !important;
+//            @include transition;
+//            &:hover{
+//                background: $baseColor;
+//            }
+//        }
+    }
+}
+/* End Slider area css
+============================================================================================ */

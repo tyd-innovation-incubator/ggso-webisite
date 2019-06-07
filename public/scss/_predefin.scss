@@ -1,0 +1,128 @@
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration:none;
+    &:hover, &:focus{
+       text-decoration:none;
+       outline: none;
+    }
+}
+.row.m0{
+    margin: 0px;
+}
+.p0{
+    padding: 0px;   
+}
+body{
+    line-height: 24px;
+    font-size: 14px;
+    font-family: $lato; 
+    color: $pfont;
+}
+
+body, p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+#success{
+    display: none;
+}
+#error{
+    display: none;
+}
+
+.display_table{
+    display: table;
+    width: 100%;
+}
+.display_table_row{
+    display: table-row;
+}
+.display_table_cell{
+    display: table-cell;
+    float: none !important;
+}
+
+iframe{
+    border: none;
+}
+i{
+    &:before{
+        margin-left: 0px !important;
+    }
+}
+
+/* Main title css
+============================================================================================ */
+.sec_middle_title{
+    text-align: center;
+    max-width: 1040px;
+    margin: auto;
+    h2{
+        font-size: 30px;
+        color: $dip;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .90px;
+        padding-bottom: 20px;
+        span{
+            color: $baseColor;
+        }
+    }
+    p{
+        font-size: 17px;
+        line-height: 28px;
+        color: $pfont;
+        font-family: $lato;
+        letter-spacing: .34px;
+    }
+}
+.section_title{
+    padding-bottom: 45px;
+    h2{
+        font-size: 28px;
+        color: $dip;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .84px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 28px;
+        color: $pfont;
+        font-family: $lato;
+        font-weight: normal;
+        padding-top: 20px;
+    }
+}
+.section_w_title{
+    padding-bottom: 40px;
+    h2{
+        font-size: 28px;
+        color: #fff;
+        font-family: $mon;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .84px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 28px;
+        color: $pfont;
+        font-family: $lato;
+        font-weight: normal;
+        padding-top: 20px;
+    }
+}
+
+/* End Magnify css
+============================================================================================ */
+
+
+

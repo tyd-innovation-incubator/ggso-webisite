@@ -1,0 +1,997 @@
+/* Our Abour Area css
+============================================================================================ */
+.our_about_area{
+    padding: 100px 0px;
+}
+.our_about_left_content{
+    padding-right: 10px;
+    .section_title{
+        padding-bottom: 30px;
+    } 
+    h3{
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: .44px;
+        color: $dip;
+        font-family: $lato;
+    }
+    p{
+        font-size: 17px;
+        line-height: 28px;
+        color: $pfont;
+        letter-spacing: .34px;
+        font-family: $lato;
+        padding-top: 30px;
+    }
+}
+.our_about_image{
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .40);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        @include transition;
+        cursor: pointer;
+    }
+    img{
+        max-width: 100%;
+        @include transition;
+    }
+    &:hover{
+        img{
+            transform: scale(1.05);
+        }
+        &:before{
+            opacity: 1;
+        }
+    }
+}
+/* End Our Abour Area css
+============================================================================================ */
+
+/* Consult Policy Area css
+============================================================================================ */
+.consult_policy_area{
+    background: url(../img/consult-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 100px 0px;
+    &:before{
+        content: "";
+        background: rgba(41, 40, 46, .90);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+    .consult_policy_inner{
+        padding: 0px 70px;
+        i{
+            color: $baseColor;
+            &:before{
+                font-size: 40px;
+                line-height: 40px;
+            }    
+        }
+        h3{
+            font-size: 40px;
+            color: #fff;
+            font-family: $lato;
+            font-weight: bold;
+            padding-top: 20px;
+            span{
+                color: $baseColor;
+            }
+        } 
+        p{
+            font-size: 17px;
+            line-height: 28px;
+            font-family: $lato;
+            color: $pfont;
+            letter-spacing: .34px;
+            padding: 20px 0px 40px 0px; 
+        }
+    }
+}
+
+/* End Consult Policy Area css
+============================================================================================ */
+
+/* Manager Area css
+============================================================================================ */
+.manager_area{
+    padding-top: 30px;
+    .our_about_left_content{
+        padding-top: 90px;
+        padding-left: 40px;
+        padding-right: 0px;
+        .section_title{
+            padding-bottom: 20px;
+        }
+        img{
+            padding-top: 10px;
+        }    
+    }
+}
+.manager_image{
+    margin-right: -50px;
+    img{
+        max-width: 100%;
+        margin-bottom: -76px;
+    }
+}
+/* End Manager Area css
+============================================================================================ */
+
+/* Error Area css
+============================================================================================ */
+.error_area{
+    background: url(../img/error-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .6);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    .error_content_inner{
+        padding-top: 245px;
+        padding-bottom: 145px;
+        h1{
+            font-size: 200px;
+            color: $baseColor;
+            font-weight: 800;
+            font-family: $open;
+        }
+        h3{
+            font-size: 50px;
+            font-family: $mon;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 1.5px;
+        }
+        h5{
+            font-size: 25px;
+            font-family: $mon;
+            font-weight: normal;
+            color: #fff;
+            letter-spacing: .75px;
+            padding-top: 15px;
+            padding-bottom: 50px;
+        }
+        .submit_btn{
+            width: 310px;
+            height: 74px;
+            line-height: 74px;
+            font-size: 22.75px;
+            letter-spacing: 0.455px;
+        }
+    }
+}
+/* End Manager Area css
+============================================================================================ */
+
+/* Carrers Area css
+============================================================================================ */
+.carrers_area{
+    padding: 100px 0px;
+}
+.carrers_left{
+    .nav.nav-tabs{
+        border: none;
+        li{
+            float: none;
+            margin-bottom: 3px;
+            a{
+                display: block;
+                border: none;
+                background: #f1f1f1;
+                font-size: 15px;
+                color: $dip;
+                font-family: $mon;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+                line-height: 55px;
+                padding: 0px 25px;
+                border-radius: 0px;
+                cursor: pointer;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            &.active{
+                a{
+                    background: $baseColor;
+                    color: #fff;
+                }
+            }
+        }    
+    }
+    .contact_info{
+        margin-top: 50px;
+        padding-right: 17px;
+        h2{
+            font-size: 18px;
+            font-family: $mon;
+            font-weight: bold;
+            color: $dip;
+            text-transform: uppercase;
+            padding-bottom: 18px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 22px;
+            color: #797979;
+            letter-spacing: .48px;
+            padding-bottom: 13px;
+        }
+        h5{
+            font-size: 16px;
+            line-height: 22px;
+            color: #797979;
+            letter-spacing: .48px;
+            padding-bottom: 13px;
+            a{
+                color: #797979;
+                letter-spacing: .48px;
+                font-size: 16px;
+            }
+            & + h5{
+                padding-bottom: 0px; 
+            } 
+        }
+    }
+    &.affix{
+        top: 0;
+        width: 270px;
+        position: fixed;
+    }
+    &.affix-bottom{
+        position: absolute;
+        width: 270px;
+    }
+}
+.download_btn{
+    a{
+        display: block;
+        background: #373540;
+        padding: 13px 18px;
+        font-size: 18px;
+        font-family: $lato;
+        font-weight: bold;
+        color: #fff;
+        img{
+            float: right;
+        }
+    }
+}
+
+.carrers_right_content{
+    padding-left: 30px;
+    .section_title{
+        padding-bottom: 22px;
+        h2{
+            font-size: 24px;
+            color: $dip;
+        }
+    }
+    .tab-content{
+        .tab-pane{
+            .requirements_text{
+                p{
+                    font-size: 17px;
+                    line-height: 28px;
+                    color: #797979;
+                    letter-spacing: .34px;
+                    padding-bottom: 20px;
+                }
+                ul{
+                    padding-left: 25px;
+                    li{
+                        margin-bottom: 10px;
+                        a{
+                            font-size: 17px;
+                            line-height: 28px;
+                            color: #797979;
+                            letter-spacing: .34px;
+                            position: relative;
+                            @include transition;
+                            i{
+                                position: absolute;
+                                left: -25px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                color: $baseColor;
+                            }
+                        }
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        &:hover{
+                            a{
+                                color: $baseColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.company_history_list{
+    .media{
+        margin-top: 34px;
+        &:first-child{
+            margin-top: 0px;
+        }
+        .media-left{
+            padding-right: 45px;
+            a{
+                color: #fff;
+                background: $baseColor;
+                display: block;
+                font-size: 24px;
+                font-family: $lato;
+                font-weight: bold;
+                line-height: 46px;
+                padding: 0px 34px;
+            }
+        }
+        .media-body{
+            h4{
+                font-size: 20px;
+                text-transform: uppercase;
+                color: $dip;
+                font-family: $mon;
+                font-weight: bold;
+                padding-bottom: 18px;
+            }
+            p{
+                font-size: 17px;
+                line-height: 28px;
+                color: #797979;
+                font-family: $lato;
+                letter-spacing: .34px;
+            }
+            .history_img_div{
+                margin-top: 35px;
+                margin-bottom: 28px;
+                .history_img_item{
+                    display: inline-block;
+                    margin-right: 28px;
+                    img{
+                        max-width: 100%;
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.open_position{
+    .section_title{
+        padding-bottom: 33px;
+        padding-top: 40px;
+        h2{
+            font-size: 24px;
+        }
+    }
+    .panel-group{
+        margin-bottom: 0px;
+        .panel-default{
+            border-radius: 0px;
+            border-color: #e5e5e5;
+            margin-top: 20px;
+            &:first-child{
+                margin-top: 0px;
+            }
+            .panel-heading{
+                padding: 0px;
+                border-color: #e5e5e5;
+                .panel-title{
+                    a{
+                        display: block;
+                        padding: 0px 20px;
+                        font-size: 18px;
+                        font-family: $lato;
+                        line-height: 50px;
+                        background: #303032;
+                        color: #fff;
+                        font-weight: bold;
+                        letter-spacing: .36px;
+                        i{
+                            float: right;
+                            line-height: 50px;
+                        }
+                        &.collapsed{
+                            background: #fafafa;
+                            color: $dip;
+                        }
+                    }
+                }
+            }
+        }
+        .panel-collapse{
+            .panel-body{
+                padding: 30px 38px 80px 40px;
+                background: #fafafa;
+                h3{
+                    font-size: 20px;
+                    font-family: $pop;
+                    font-weight: 600;
+                    color: $dip;
+                    padding-bottom: 15px;
+                }
+                p{
+                    font-size: 17px;
+                    line-height: 28px;
+                    color: #797979;
+                    letter-spacing: .34px;
+                    font-family: $lato;
+                    padding-bottom: 30px;
+                    & + p{
+                        padding-bottom: 0px;
+                    }    
+                }
+            }
+        }
+    }
+}
+.download_area{
+    padding: 26px 60px;
+    background: #303032;
+    overflow: hidden;
+    clear: both;
+    margin-top: 45px;
+    .pull-left{
+        h4{
+            font-size: 24px;
+            font-family: $pop;
+            font-weight: 600;
+            color: #fff;
+            padding-top: 13px;
+        }
+    }
+    .pull-right{
+        .main_btn{
+            padding: 0px 25px;
+        }
+    }
+}
+/* End Carrers Area css
+============================================================================================ */
+
+/* Company Overview Area css
+============================================================================================ */
+.about_company{
+    .section_title{
+        padding-top: 48px;
+    }
+    p{
+        font-size: 17px;
+        font-weight: 400;
+        color: #797979;
+        line-height: 28px;
+        font-family: $lato;
+        letter-spacing: .34px;
+        padding-bottom: 35px;
+        & + p{
+            padding-bottom: 0px;
+        }
+    }
+    .business_divider_img{
+        .our_about_image{
+            img{
+                max-width: none;
+            }
+        }
+    }
+}
+.we_are_content{
+    margin-top: 45px;
+    margin-bottom: 50px;
+    .we_are_text{
+        margin-right: -23px;
+        p{
+            font-size: 17px;
+            font-weight: 400;
+            color: #797979;
+            line-height: 28px;
+            font-family: $lato;
+            letter-spacing: .34px;
+            padding-bottom: 30px;
+            & + p{
+                padding-bottom: 0px;
+            }
+        }
+        ul{
+            padding-left: 32px;
+            padding-top: 25px;
+            li{
+                margin-bottom: 13px;
+                a{
+                    position: relative;
+                    font-size: 17px;
+                    color: #999999;
+                    font-family: $lato;
+                    @include transition;
+                    img{
+                        position: absolute;
+                        left: -32px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @include transition;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                &:hover{
+                    a{
+                        color: $baseColor;
+                        img{
+                            left: -25px;
+                        }
+                    }
+                }    
+            }
+        }    
+    }
+    .our_about_image{
+        margin-left: 23px;
+        & + .our_about_image{
+            margin-top: 17px;
+        }
+    }
+    &.companu_history_img{
+        margin-top: 0px;
+        margin-bottom: 45px;
+        .we_are_text{
+            p{
+                padding-bottom: 25px;
+                &:last-child{
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+.development_process{
+    background: #f1f1f1;
+    padding: 45px 40px 60px 40px;
+    p{
+        font-size: 17px;
+        font-weight: 400;
+        color: #797979;
+        line-height: 28px;
+        font-family: $lato;
+        letter-spacing: .34px;
+    }
+}
+
+.panel-group.faq_panel{
+    .panel-default{
+        border-radius: 0px;
+        border-color: #d1d1d1;
+        margin-top: 20px;
+        .panel-heading{
+            padding: 0px;
+            background: transparent;
+            .panel-title{
+                a{
+                    font-size: 18px;
+                    color: #fff;
+                    font-family: $lato;
+                    letter-spacing: .34px;
+                    line-height: 50px;
+                    background: $baseColor;
+                    display: block;
+                    padding: 0px 20px;
+                    font-weight: 600;
+                    i{
+                        float: right;
+                        line-height: 50px;
+                    }
+                    &.collapsed{
+                        background: #fafafa;
+                        color: $dip;
+                        i{
+                            color: #909090;
+                        }
+                    }
+                }
+            }    
+        }
+        &:first-child{
+            margin-top: 0px;
+        }
+        .panel-collapse{
+            .panel-body{
+                background: #fafafa;
+                padding: 30px 40px 38px 40px;
+                font-size: 17px;
+                font-weight: 400;
+                color: #797979;
+                line-height: 28px;
+                font-family: $lato;
+                letter-spacing: .34px;
+            }
+        }
+    }
+}
+
+.partner_details{
+    .section_title{
+        padding-bottom: 20px;
+    }
+}
+.partner_details_inner{
+    .media{
+        background: #f1f1f1;
+        padding: 30px 0px;
+        margin-top: 30px;
+        .media-left{
+            padding-right: 20px;
+            padding-left: 15px;
+        }
+        .media-body{
+            vertical-align: middle;
+            padding-right: 60px;
+            h4{
+                font-size: 20px;
+                font-family: $mon;
+                font-weight: bold;
+                color: $dip;
+                letter-spacing: .40px;
+                text-transform: uppercase;
+                padding-bottom: 15px;
+            }
+            p{
+                font-size: 17px;
+                color: #797979;
+                line-height: 28px;
+                letter-spacing: .34px;
+            }
+        }
+    }
+}
+
+/* End Company Overview Area css
+============================================================================================ */
+
+/* Case Study Area css
+============================================================================================ */
+.case_study_area{
+    padding: 100px 0px;
+}
+.case_study_inner{
+    
+}
+.case_study_details{
+    
+    .case_study_img{
+        position: relative;
+        .customer_status{
+            max-width: 370px;
+            position: absolute;
+            right: 30px;
+            bottom: 0px;
+            z-index: 20;
+            background: $baseColor;
+            color: #fff;
+            width: 100%;
+            min-height: 355px;
+            padding: 40px 0px 0px 40px;
+            .table-responsive{
+                .table{
+                    tbody{
+                        tr{
+                            border: none;
+                            margin-bottom: 18px;
+                            td{
+                                border: none;
+                                padding: 9px 0px;
+                                font-family: $lato;
+                                font-size: 17px;
+                                letter-spacing: .34px;
+                                font-weight: normal;
+                                &:first-child{
+                                    width: 105px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .our_about_left_content{
+        .section_title{
+            margin-top: 50px;
+        }
+    }
+}
+.proces_project{
+    margin-top: 65px;
+    .pp_project{
+        padding-left: 20px;
+        .section_title{
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 17px;
+            line-height: 28px;
+            color: #797979;
+            font-family: $lato;
+            letter-spacing: .34px;
+        }
+    }
+}
+.challence_tab_area{
+    margin-top: 100px;
+    .nav.nav-tabs{
+        border-bottom: 0px;
+        li{
+            margin-bottom: 0px;
+            margin-right: 6px;
+            a{
+                padding: 0px 45px;
+                color: $dip;
+                font-family: $mon;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-weight: bold;
+                line-height: 54px;
+                border-left: 1px solid #d6d6d6;
+                border-right: 1px solid #d6d6d6;
+                border-top: 1px solid #d6d6d6;
+                border-bottom: none;
+                border-radius: 0px;
+                @include transition;
+                font-size: 18px;
+                letter-spacing: .54px;
+            }
+            &:hover, &.active{
+                a{
+                    background: $baseColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .tab-content{
+        .tab-pane{
+            border: 1px solid #d6d6d6;
+            padding: 60px 50px;
+            .challence_content{
+                p{
+                    font-size: 17px;
+                    line-height: 28px;
+                    color: #797979;
+                    font-family: $lato;
+                    letter-spacing: .34px;
+                    padding-bottom: 35px;
+                }
+            }
+            .challence_list{
+                margin-top: 25px;
+                .challence_item{
+                    margin-left: 35px;
+                    position: relative;
+                    margin-bottom: 40px;
+                    &:before{
+                        content: "";
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 50%;
+                        background: $baseColor;
+                        position: absolute;
+                        left: -28px;
+                        top: 5px;
+                    }
+                    h5{
+                        font-size: 17px;
+                        font-family: $lato;
+                        color: $dip;
+                        letter-spacing: .51px;
+                        font-weight: bold;
+                        padding-bottom: 14px;
+                    }
+                    p{
+                        font-size: 17px;
+                        color: #898989;
+                        font-family: $lato;
+                        letter-spacing: .51px;
+                        line-height: 28px;
+                        padding-bottom: 0px;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Case Study Area css
+============================================================================================ */
+
+/* Welcome Consult Area css
+============================================================================================ */
+.welcome_consult_area{
+    background: #f4f4f4;
+    padding: 100px 0px;
+    .welcome_c_image{
+        box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.31);
+        display: inline-block;
+        text-align: right;
+        float: right;
+        img{
+            float: right;
+        }    
+    }
+}
+.welcome_c_left{
+    .sec_middle_title{
+        text-align: left;
+        h2{
+            font-size: 32px;
+        }
+    }
+    .welcome_c_text{
+        h6{
+            font-size: 20px;
+            line-height: 26px;
+            font-family: $open;
+            letter-spacing: .6px;
+            color: $dip;
+            padding-bottom: 25px;
+        }
+        p{
+            font-size: 15px;
+            font-family: $open;
+            line-height: 26px;
+            color: $pfont;
+            letter-spacing: .6px;
+        }
+    }
+    .welcome_quality{
+        max-width: 547px;
+        margin-top: 45px;
+        h4{
+            color: $dip;
+            font-size: 22px;
+            font-family: $mon;
+            font-weight: bold;
+            letter-spacing: .66px;
+            padding-bottom: 12px;
+        }
+        p{
+            font-size: 15px;
+            font-family: $open;
+            line-height: 26px;
+            color: $pfont;
+            letter-spacing: .6px;
+        }
+    }
+}
+/* End Welcome Consult Area css
+============================================================================================ */
+
+/* Consult Plus Area css
+============================================================================================ */
+.consult_plus_area{
+    background: #f4f4f4;
+    padding: 100px 0px;
+    .sec_middle_title{
+        padding-bottom: 50px;
+        h2{
+            position: relative;
+            padding-bottom: 27px;
+            margin-bottom: 35px;
+            &:before{
+                content: "";
+                background: #b4b4b4;
+                width: 70px;
+                height: 1px;
+                position: absolute;
+                left: 50%;
+                bottom: 0px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+.consult_plus_inner{
+    margin-bottom: -70px;
+    overflow: hidden;
+    .consult_plus_item{
+        margin-bottom: 70px;
+        .media{
+            .media-left{
+                padding-right: 30px;
+                .consult_plus_img{
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                    text-align: center;
+                    background: $baseColor;
+                    line-height: 56px;
+                }
+            }
+            .media-body{
+                h4{
+                    font-size: 16px;
+                    color: $dip;
+                    font-family: $mon;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: .48px;
+                    padding-bottom: 12px;
+                    padding-top: 8px;
+                    position: relative;
+                    @include transition;
+                    &:before{
+                        content: "";
+                        background: #000000;
+                        width: 15px;
+                        height: 1px;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        @include transition;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    font-family: $lato;
+                    color: #777777;
+                    line-height: 32px;
+                    letter-spacing: .48px;
+                }
+            }
+        }
+        &:hover{
+            .media{
+                .media-body{
+                    h4{
+                        color: $baseColor;
+                        &:before{
+                            background: $baseColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Consult Plus Area css
+============================================================================================ */

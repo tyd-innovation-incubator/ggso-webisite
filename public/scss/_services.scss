@@ -1,0 +1,687 @@
+/* Business Box area css
+============================================================================================ */
+.business_box_area{
+    padding: 100px 0px;
+    .sec_middle_title{
+        padding-bottom: 60px;
+    }
+}
+.business_box_item{
+    .business_image{
+        overflow: hidden;
+        position: relative;
+        display: block;
+        &:before{
+            content: "";
+            background: rgba(24, 186, 96, .8);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            @include transition;
+            display: block;
+        }
+        img{
+            max-width: 100%;
+            @include transition;
+        }
+    }
+    .business_text{
+        border-left: 3px solid $baseColor;
+        padding-left: 15px;
+        margin-top: 30px;
+        h4{
+            font-size: 16px;
+            font-weight: bold;
+            color: $dip;
+            font-family: $mon;
+            text-transform: uppercase;
+            letter-spacing: .32px;
+            padding-bottom: 8px;
+            @include transition;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+        h5{
+            font-size: 17px;
+            color: $pfont;
+            font-family: $lato;
+            font-weight: 400;
+            letter-spacing: .34px;
+        }
+    }
+    &:hover{
+        .business_image{
+            &:before{
+                transform: scaleX(1);
+                opacity: 1;
+            }
+            img{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+/* End Business Box css
+============================================================================================ */
+
+/* Our Service area css
+============================================================================================ */
+.our_service_area{
+    background: #f4f4f4;
+    padding: 100px 0px;
+    &.our_white_service{
+        background: #fff;
+        .section_title{
+            padding-bottom: 17px;
+        }
+    }
+}
+.service_inner{
+    margin-bottom: -30px;
+    overflow: hidden;
+}
+.service_item{
+    padding: 34px 15px 34px 24px;
+    background: #fff;
+    margin-bottom: 30px;
+    transition: all 150ms ease;
+    .media{
+        .media-left{
+            padding-right: 20px;
+            position: relative;
+            img{
+                & + img{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    opacity: 0;
+                }
+            }
+        }
+        .media-body{
+            h4{
+                font-size: 16px;
+                font-family: $mon;
+                color: $dip;
+                letter-spacing: .32px;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $lato;
+                letter-spacing: .32px;
+                color: $pfont;
+                font-weight: 400;
+                padding-bottom: 15px;
+            }
+            .more_link{
+                font-size: 14px;
+            }
+        }
+    }
+    &:hover{
+        background: #205081;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.38);
+        .media{
+            .media-left{
+                img{
+                    opacity: 0;
+                    & + img{
+                        opacity: 1;
+                    }
+                }
+            }
+            .media-body{
+                h4{
+                    color: #fff;
+                }  
+                p{
+                    color: #99a7b6;
+                }
+            }
+        }
+    }
+}
+.more_link{
+    font-family: $mon;
+    font-weight: bold;
+    letter-spacing: .384px;
+    color: $baseColor;
+    font-size: 14px;
+    text-transform: uppercase;
+    @include transition;
+    &:hover{
+        text-decoration: underline;
+        color: $baseColor;
+    }
+}
+/* End Our Service area css
+============================================================================================ */
+
+/* Practice area css
+============================================================================================ */
+.practice_area{
+    padding: 100px 0px;
+}
+.practice_inner{
+    
+}
+.practice_item{
+    .practice_image{
+        position: relative;
+        z-index: 2;
+        &:before{
+            content: "";
+            background: rgba(24, 186, 96, .9);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition-property: transform;
+            @include transition;
+        }
+        img{
+            max-width: 100%;
+        }
+        a{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: $mon;
+            letter-spacing: .42px;
+            font-weight: bold;
+            opacity: 0;
+            @include transition;
+            margin-top: -9px;
+            h4{
+                font-size: 14px;
+                font-family: $mon;
+                font-weight: bold;
+                letter-spacing: .42px;
+            }
+        }
+    }
+    h5{
+        font-size: 17px;
+        font-family: $lato;
+        font-weight: bold;
+        color: $dip;
+        line-height: 22px;
+        letter-spacing: .34px;
+        padding-right: 60px;
+        padding-top: 25px;
+    }
+    &:hover{
+        .practice_image{
+            &:before{
+                transform: scaleX(1);
+            }
+            a{
+                opacity: 1;
+            }
+        }
+    }
+}
+/* End Practice area css
+============================================================================================ */
+
+/* Company area css
+============================================================================================ */
+.our_company_area{
+    padding: 100px 0px;
+    background: #f4f4f4;
+    .section_title{
+        padding-bottom: 40px;
+    }
+    &.white_company{
+        background: #fff;
+    }
+}
+.company_item{
+    .company_image{
+        .company_img{
+            position: relative;
+            overflow: hidden;
+            &:before{
+                content: "";
+                background: rgba(24, 186, 96, .8);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                transform: scaleX(0);
+                transform-origin: 0 50%;
+                @include transition;
+            }
+            &:hover{
+                &:before{
+                    transform: scaleX(1);
+                }
+            }
+        }
+        img{
+            max-width: 100%;
+            @include transition;
+        }    
+    }
+    h6{
+        font-size: 20px;
+        font-family: $lato;
+        line-height: 26px;
+        color: $dip;
+        letter-spacing: .40px;
+        padding: 27px 0px 25px 0px;
+    }
+    p{
+        font-size: 17px;
+        color: $pfont;
+        font-family: $lato;
+        line-height: 28px;
+        letter-spacing: .34px;
+    }
+}
+.company_collaps_inner{
+    padding-left: 34px;
+}
+.company_collaps{
+    .panel.panel-default{
+        border-radius: 0px;
+        border-color: #dedede;
+        margin-top: 10px;
+        &:first-child{
+            margin-top: 0px;
+        }
+        .panel-heading{
+            padding: 0px;
+            border-radius: 0px;
+            .panel-title{
+                a{
+                    line-height: 52px;
+                    padding: 0px 15px;
+                    background: #fff;
+                    display: block;
+                    font-size: 18px;
+                    font-family: $lato;
+                    color: $dip;
+                    letter-spacing: .54px;
+                    i{
+                        height: 28px;
+                        width: 28px;
+                        text-align: center;
+                        background: transparent;
+                        display: inline-block;
+                        line-height: 28px;
+                        color: $baseColor;
+                        font-size: 14px;
+                        margin-right: 20px;
+                    }
+                    .fa-plus{
+                        display: none;
+                    }
+                    .fa-minus{
+                        display: inline-block;
+                        background: $baseColor;
+                        color: #fff;
+                    }
+                    &.collapsed{
+                        .fa-plus{
+                            display: inline-block;
+                        }
+                        .fa-minus{
+                            display: none;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .panel-collapse{
+            .panel-body{
+                border-top: 0px;
+                padding: 5px 35px 35px 64px; 
+                font-size: 15px;
+                line-height: 26px;
+                color: $pfont;
+                letter-spacing: .45px;
+                font-family: $open;
+            }
+        }
+    }
+}
+/* End Company area css
+============================================================================================ */
+
+/* Testimonials area css
+============================================================================================ */
+.testimonials_area{
+    background: #205081;
+    padding: 100px 0px;
+}
+.testimonials_slider{
+    .item{
+        .media{
+            padding-right: 100px;
+            padding-top: 54px;
+            .media-left{
+                text-align: center;
+                padding-right: 74px;
+                img{
+                    width: auto;
+                }
+                i{
+                    color: $baseColor;
+                    font-size: 100px;
+                    font-weight: bold;
+                    line-height: 100px;
+                    font-family: 'Arial', sans-serif;
+                    font-style: normal;
+                    padding-top: 15px;
+                    display: block;
+                }    
+            }
+            .media-body{
+                p{
+                    font-size: 22px;
+                    font-family: $lato;
+                    line-height: 35px;
+                    letter-spacing: .66px;
+                    color: #fff;
+                    font-style: italic;
+                }
+                h4{
+                    font-size: 18px;
+                    font-family: $mon;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: .54px;
+                    color: #fff;
+                    padding-top: 45px;
+                    padding-bottom: 10px;
+                }
+                h5{
+                    font-size: 18px;
+                    font-family: $lato;
+                    letter-spacing: .54px;
+                    font-style: italic;
+                    color: #849bb3;
+                }
+            }
+        }
+    }
+    .owl-dots{
+        position: absolute;
+        left: 197px;
+        top: 0px;
+        .owl-dot{
+            height: 10px;
+            width: 10px;
+            border: 1px solid #92a5b7;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            &.active{
+                background: $baseColor;
+            }
+        }
+    }    
+}
+/* End Testimonials area css
+============================================================================================ */
+
+/* Partner Logo area css
+============================================================================================ */
+.partner_area{
+    background: #eeeeee;
+}
+.partner_slider{
+    .item{
+        text-align: center;
+        line-height: 176px;
+        img{
+            width: auto;
+            max-width: 100%;
+            display: inline-block;
+        }
+    }
+}
+/* End Partner Logo area css
+============================================================================================ */
+
+/* Our Services area css
+============================================================================================ */
+.service_area{
+    padding: 100px 0px;
+    .section_title{
+        padding-bottom: 60px;
+    }
+}
+.service_item_inner{
+    margin-bottom: -60px;
+    overflow: hidden;
+    clear: both;
+    .business_box_item{
+        margin-bottom: 60px;
+    }
+}
+
+/* Single Service css */
+.analysis_market{
+    margin-top: 35px;
+    .our_about_image{
+        margin-top: 55px;
+        margin-right: -8px;
+    }    
+}
+.analysis_text{
+    padding-left: 30px;
+    h3{
+        color: $dip;
+        font-family: $mon;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: .34px;
+        color: #797979;
+        font-family: $lato;
+    }
+    ul{
+        padding-top: 20px;
+        li{
+            a{
+                color: #999999;
+                letter-spacing: .34px;
+                line-height: 28px;
+                font-family: $lato;
+                font-size: 17px;
+            }
+        }
+    }
+}
+.market_option{
+    margin-top: 55px;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    .col-sm-4{
+        &:first-child{
+            .market_option_item{
+                &:before{
+                    display: none;
+                }
+            }   
+        }
+    }
+    .market_option_item{
+        text-align: center;
+        padding: 35px 15px;
+        position: relative;
+        &:before{
+            content: "";
+            background: #e5e5e5;
+            height: 165px;
+            width: 1px;
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        img{
+            max-width: 100%;
+        }
+        h4{
+            font-size: 16px;
+            color: $dip;
+            font-family: $mon;
+            text-transform: uppercase;
+            padding: 22px 0px 10px 0px;
+        }
+        p{
+            font-size: 16px;
+            color: #797979;
+            line-height: 30px;
+            font-family: $lato;
+            letter-spacing: .32px;
+        }
+    }    
+}
+.service_advantage{
+    margin-top: 50px;
+    .service_advantage_left{
+        padding-right: 20px;
+        .section_title{
+            padding-bottom: 20px;
+            h2{
+                text-transform: capitalize;
+            }
+        }
+        p{
+            font-size: 17px;
+            font-family: $lato;
+            color: #797979;
+            letter-spacing: .34px;
+            line-height: 28px;
+        }
+        ul{
+            padding-left: 32px;
+            padding-top: 25px;
+            li{
+                margin-bottom: 10px;
+                a{
+                    font-size: 17px;
+                    font-family: $lato;
+                    color: #999999;
+                    letter-spacing: .34px;
+                    line-height: 28px;
+                    position: relative;
+                    @include transition;
+                    img{
+                        position: absolute;
+                        left: -30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @include transition;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                &:hover{
+                    a{
+                        color: $baseColor;
+                        img{
+                            left: -25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.service_consultation_box{
+    background: #373540;
+    padding: 50px 40px;
+    h6{
+        font-size: 22px;
+        font-family: $lato;
+        font-style: italic;
+        color: #fff;
+        max-width: 210px;
+    }
+    h4{
+        color: #fff;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: .48px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px 0px 30px 0px;
+        span{
+            color: $baseColor;
+        }
+    }
+    .main_btn{
+        
+    }
+}
+
+.business_divider_img{
+    .b_left_img{
+        margin-right: -80px;
+    }
+    .b_right_img{
+        float: right;
+    }
+}
+.analysis_business{
+    margin-top: 45px;
+    padding-bottom: 30px;
+    .analysis_text{
+        padding-top: 35px;
+    }
+}
+.analysis_left_text{
+    h5{
+        color: $dip;
+        font-size: 24px;
+        font-family: $mon;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: 24px;
+        line-height: 31px;
+        color: $dip;
+        font-family: $lato;
+        letter-spacing: .48px;
+        font-weight: 300;
+    }
+}
+
+/* End Our Services area css
+============================================================================================ */

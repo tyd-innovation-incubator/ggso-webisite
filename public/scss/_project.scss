@@ -1,0 +1,402 @@
+/* Project Area css
+============================================================================================ */
+.our_cases_area{
+    padding: 100px 0px;
+    &.our_cases_single{
+        .project_fillter{
+            background: transparent;
+            box-shadow: none;
+            margin-bottom: 35px;
+            li{
+                margin-left: 0px;
+                a{
+                    color: #797979;
+                    background: transparent;
+                    padding: 0px 18px;
+                    line-height: 30px;
+                }
+                &:hover, &.active{
+                    a{
+                        background: $baseColor;
+                        color: #fff;
+                    }    
+                }
+            }
+        }
+        .green_submit_btn{
+            margin: 0 auto;
+            width: 180px;
+        }
+    }
+}
+.cases_btn_area{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.our_case_inner{
+    margin-bottom: -45px;
+    overflow: hidden;
+    clear: both;
+}
+.cases_item{
+    margin-bottom: 45px;
+    .cases_image{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        display: block;
+        z-index: 3;
+        &:before{
+            content: "";
+            background: rgba(24, 186, 96, .90);
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            opacity: 0;
+            @include transition;
+        }
+        .cases_before{
+            position: relative;
+            display: block;
+            &:before{
+                content: "";
+                background: rgba(24, 186, 96, .90);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                transform: scaleX(0);
+                transform-origin: 0 50%;
+                transition-property: transform;
+                @include transition;
+                display: block;
+            }
+        }
+        
+        img{
+            max-width: 100%;
+            @include transition;
+        }
+        h4{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: $mon;
+            letter-spacing: .42px;
+            font-weight: bold;
+            opacity: 0;
+            @include transition;
+            margin-top: -9px;
+            cursor: pointer;
+        }
+    }
+//    .cases_hover_text{
+//        position: absolute;
+//        left: 0px;
+//        width: 100%;
+//        text-align: center;
+//        top: 50%;
+//        transform: translateY()
+//    }
+    h5{
+        font-size: 16px;
+        color: $baseColor;
+        font-family: $lato;
+        font-weight: bold;
+        letter-spacing: .44px;
+        padding: 20px 0px 10px 0px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 26px;
+        font-family: $lato;
+        letter-spacing: .34px;
+        font-weight: bold;
+        color: $dip;
+        max-width: 208px;
+    }
+    &:hover{
+        .cases_image{
+            &:before{
+                opacity: 1;
+            }
+            .cases_before{
+                &:before{
+                    transform: scaleX(1);
+                }
+            }
+            h4{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.project_fillter{
+    background: $baseColor;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.17);
+    li{
+        display: inline-block;
+        margin-left: 25px;
+        a{
+            color: #fff;
+            font-size: 15px;
+            line-height: 60px;
+            display: inline-block;
+            font-family: $mon;
+            letter-spacing: .30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            @include transition;
+        }
+        &:hover, &.active{
+            a{
+                color: #000;
+            }
+        }
+    }
+}
+
+.black_cases_area{
+    background: #2a292e;
+    padding: 130px 0px 55px 0px;
+    .cases_item{
+        .cases_image{
+            &:before{
+                background: rgba(24, 186, 96, .8);
+            }
+        }
+        p{
+            color: #a0a0a0;
+        }
+    }
+    &.white_cases{
+        background: #efefef;
+        .row{
+            margin-bottom: -45px;
+            overflow: hidden;
+        }    
+        .cases_all{
+            margin-top: -35px;
+            h4{
+                font-size: 28px;
+                color: $dip;
+                font-family: $mon;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: .84px;
+            }
+            p{
+                font-size: 17px;
+                line-height: 28px;
+                color: #797979;
+                letter-spacing: .34px;
+                padding: 25px 0px 35px 0px;
+            }
+        }
+        .cases_item{
+            .cases_image{
+                &:before{
+                    background: rgba(24, 186, 96, 0.9);
+                }
+            }
+            h5{
+                font-size: 16px;
+                text-transform: uppercase;
+                color: $dip;
+                font-family: $mon;
+                font-weight: bold;
+                letter-spacing: .32px;
+                padding: 30px 0px 10px 0px;
+            }
+            p{
+                max-width: none;
+                font-size: 17px;
+                color: $pfont;
+                letter-spacing: .34px;
+            }
+        }
+    }
+}
+.black_cases_slider_inner{
+    margin-top: -35px;
+    position: relative;
+    .owl-prev, .owl-next{
+        display: inline-block;
+        height: 46px;
+        width: 46px;
+        text-align: center;
+        border: 2px solid #747474;
+        line-height: 40px;
+        font-size: 22.47px;
+        @include transition;
+        position: absolute;
+        left: 0px;
+        bottom: -75px;
+        cursor: pointer;
+        &:hover{
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+    .owl-next{
+        left: 60px;
+    }
+    .black_slider_inner{
+        h4{
+            font-size: 28px;
+            color: #fff;
+            font-weight: bold;
+            font-family: $mon;
+            text-transform: uppercase;
+            letter-spacing: .84px;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 17px;
+            font-family: $lato;
+            line-height: 28px;
+            color: $pfont;
+            letter-spacing: .34px;
+        }
+        .owl-nav{
+            margin-top: 50px;
+            .owl-prev, .owl-next{
+                display: inline-block;
+                height: 46px;
+                width: 46px;
+                text-align: center;
+                border: 2px solid #747474;
+                line-height: 40px;
+                font-size: 22.47px;
+                @include transition;
+                &:hover{
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
+            .owl-next{
+                margin-left: 20px;
+            }
+        }
+    }    
+}
+
+/* End Project Area css
+============================================================================================ */
+
+/* Home Cases Area css
+============================================================================================ */
+.our_cases_home_area{
+    padding: 100px 0px;
+    .section_title{
+        padding-bottom: 38px;
+    }
+}
+.home_cases_menu{
+    .pull-left{
+        .project_fillter{
+            background: transparent;
+            box-shadow: none;
+            margin-bottom: 0px;
+            li{
+                a{
+                    color: $dip;
+                    line-height: 24px;
+                    border-bottom: 2px solid transparent;
+                    @include transition;
+                }
+                &:first-child{
+                    margin-left: 0px;
+                }
+                &:hover, &.active{
+                    a{
+                        color: $baseColor;
+                        border-bottom: 2px solid $baseColor;
+                    }
+                }
+            }
+        }
+    }
+    .pull-right{
+        a{
+            font-size: 15px;
+            font-family: $mon;
+            font-weight: bold;
+            letter-spacing: .45px;
+            color: $dip;
+            text-transform: uppercase;
+            @include transition;
+            &:hover{
+                color: $baseColor;
+            }
+        }    
+    }
+}
+.home_cases_inner{
+    margin-bottom: -45px;
+    overflow: hidden;
+    clear: both;
+    margin-top: 35px;
+}
+
+.home_cases_item{
+    text-align: center;
+    margin-bottom: 45px;
+    .home_cases_img{
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        img{
+            width: 100%;
+            @include transition;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 0%;
+            height: 100%;
+            background: rgba(24, 186, 96, 0.9);
+            z-index: 1;
+            @include transition;
+        }
+    }
+    h4{
+        font-size: 17px;
+        color: $dip;
+        font-family: $lato;
+        font-weight: bold;
+        letter-spacing: .51px;
+        padding-top: 25px;
+        @include transition;
+    }
+    &:hover{
+        .home_cases_img{
+            img{
+                transform: scale(1.05);
+            }    
+            &:before{
+                width: 100%;
+            }
+        }
+        h4{
+            color: $baseColor;
+        }
+    }
+}
+/* End Home Cases Area css
+============================================================================================ */
